@@ -1,6 +1,6 @@
 # ShopApp
 
-A new Flutter project.
+#### This flutter project is the app made during a course for learning purposes.
 
 ## Getting Started
 
