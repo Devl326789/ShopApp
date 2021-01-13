@@ -67,6 +67,17 @@ class Products with ChangeNotifier {
   //   notifyListeners();
   // }
 
+  Future<void> fetchAndSetProducts() async {
+    try {
+      const url =
+          'https://shopapp-bb57b-default-rtdb.firebaseio.com/products.json';
+      final response = await http.get(url);
+      print(json.decode(response.body));
+    } catch (error) {
+      throw (error);
+    }
+  }
+
   Future<void> addProduct(Product product) async {
     const url =
         'https://shopapp-bb57b-default-rtdb.firebaseio.com/products.json';
