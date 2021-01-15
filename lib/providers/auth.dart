@@ -9,8 +9,12 @@ class Auth with ChangeNotifier {
   String _token;
   DateTime _expiryDate;
   String _userId;
+<<<<<<< HEAD
   String _apiKey = 'AIzaSyAAHKOgYTddu2-MVSu94JFGF6ISlOh6DHQ';
   Timer _authTimer;
+=======
+  String _apiKey = '';
+>>>>>>> 04dea743e2d4d509f5e7d3a253d7879f9bf71c73
 
   bool get isAuth {
     return token != null;
